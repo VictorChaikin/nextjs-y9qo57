@@ -1,0 +1,33 @@
+
+.form {
+  margin-top: 16px;
+  width: 80%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.formControls {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 18px;
+  width: fit-content;
+  margin-top: 32px;
+  padding: 16px 32px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+}

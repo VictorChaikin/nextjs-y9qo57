@@ -1,0 +1,33 @@
+.container {
+  padding: 16px;
+}
+
+.list {
+  margin: 16px 0;
+  max-height: 80%;
+  height: 80%;
+  overflow: auto;
+}
+
+.listItem {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.cardContent {
+  margin-left: 16px;
+}
+
+.cardContentItem {
+  padding: 8px;
+}
+
+.cardContentLabel {
+  font-weight: 600;
+  margin-right: 4px;
+}
