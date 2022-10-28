@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import Search from '../components/Search';
 import styles from '../styles/Planets.module.css';
 
 const planetImage = `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/1200px-Mercury_in_color_-_Prockter07-edit1.jpg`;
@@ -14,14 +15,15 @@ export const Planets = ({ data, dataDescription }) => {
 
   return (
     <div className={styles.container}>
-      <h1>Planets list</h1>
+      <h1 className={styles.title}>Planets list</h1>
 
-      <input
-        className={styles.search}
-        value={search}
-        placeholder="Search..."
-        onInput={(e) => setSearch(e.target.value)}
-      />
+      <div className={styles.searchWrapper}>
+        <Search
+          value={search}
+          placeholder="Search..."
+          onInput={setSearch}
+        />
+      </div>
 
       <ul className={styles.list}>
         {searchedList?.map((item, idx) => (
